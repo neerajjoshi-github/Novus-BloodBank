@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d2d9df;
+  color: white;
+}
+
+.ant-form-item-explain-error {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+/* Antd Table Styles */
+
+.ant-tabs-nav::before {
+  width: 80%;
+  background: white;
+  border: 2px solid white !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+}
+
+.ant-table-wrapper {
+  @apply p-1 bg-[#fafafa] rounded-md w-full 3xl:w-fit;
+}
+
+tr {
+  @apply text-xs sm:text-sm md:text-base whitespace-nowrap;
+}
+
+/* Antd Modal */
+
+.ant-modal-content {
+  @apply !bg-[#d2d9df] !px-2 !py-4;
+}
+.ant-modal-content:has(from) {
+  @apply !bg-red-900 !px-2 !py-4;
+}
+
+.ant-modal-title {
+  @apply !bg-[#d2d9df];
+}
+
+/* Label for forms */
+
+.ant-form-item-label > label {
+  font-weight: 500;
+  color: white !important;
+}
