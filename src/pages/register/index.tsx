@@ -1,4 +1,3 @@
-// should be able to go to home page without logging in
 import { Button, Form, Radio, RadioChangeEvent, message } from "antd";
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
@@ -55,13 +54,16 @@ const Register = () => {
     }
   };
   return (
-    <div className="flex min-h-screen items-center justify-center">
+    <div className="flex min-h-screen items-center justify-center relative">
+      <div className="fixed top-0 left-0 p-6 w-full">
+        <h1 className="text-primary">NOVUS</h1>
+      </div>
       <Form
         onFinish={onFormSubmit}
         layout="vertical"
         requiredMark={false}
         validateMessages={validateMessages}
-        className="w-full border border-solid border-white sm:m-0 sm:w-[90%] m-3 md:w-[700px] bg-secondaryBg rounded-lg flex flex-col sm:grid sm:grid-cols-2 p-2 sm:p-5 gap-x-4 shadow-lg"
+        className="mt-20 z-10 w-full border border-solid border-white sm:m-0 sm:w-[90%] m-3 md:w-[700px] bg-secondaryBg rounded-lg flex flex-col sm:grid sm:grid-cols-2 p-2 sm:p-5 gap-x-4 shadow-lg"
       >
         <div className="col-span-2 mb-3 flex flex-col gap-y-3 sm:flex-row items-center justify-between">
           <h1 className="text-white text-4xl">Register</h1>

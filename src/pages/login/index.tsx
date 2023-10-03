@@ -39,7 +39,7 @@ const Login = () => {
       if (response.status === "ok") {
         message.success(response.message);
         localStorage.setItem("token", response.data.token);
-        navigate("/");
+        navigate("/home");
       } else {
         message.error(response.message);
       }
@@ -51,7 +51,11 @@ const Login = () => {
     }
   };
   return (
-    <div className="flex h-screen items-center justify-center">
+    <div className="flex h-screen items-center justify-center relative">
+      <div className="absolute top-0 left-0 p-6 ">
+        <h1 className="text-primary">NOVUS</h1>
+      </div>
+
       <Form
         onFinish={onFormSubmit}
         layout="vertical"

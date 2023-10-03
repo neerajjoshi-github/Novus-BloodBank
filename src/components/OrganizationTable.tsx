@@ -10,8 +10,6 @@ import {
   getInventoryWithFilters,
 } from "../api/inventoryApi";
 
-// ! call get data if their is any record and set inisitial values
-
 const OrganizationTable = ({ data }: any) => {
   const currentUser = useSelector(
     (state: RootState) => state.currentUser.currentUser

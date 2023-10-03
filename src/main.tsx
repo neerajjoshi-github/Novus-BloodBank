@@ -11,10 +11,15 @@ import AuthorizationWrapper from "./components/AuthorizationWrapper.tsx";
 import { Provider } from "react-redux";
 import { store } from "./store/store.ts";
 import ProfilePage from "./pages/profile/index.tsx";
+import LandingPage from "./pages/LandingPage/index.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "home",
     element: (
       <AuthorizationWrapper>
         <Home />
