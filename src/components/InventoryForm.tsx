@@ -2,7 +2,7 @@ import { Modal, Select, message } from "antd";
 import { Form, Input, Radio, RadioChangeEvent } from "antd";
 import { useState } from "react";
 import { addToInventoray } from "../api/inventoryApi";
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector";
+import { useSelector } from "react-redux/es/hooks/useSelector";
 import { RootState } from "../store/store";
 
 interface InventoryFormProps {

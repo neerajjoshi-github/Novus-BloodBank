@@ -1,6 +1,6 @@
 import React, { FC, useEffect } from "react";
 import { getUser } from "../api/userApi";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setCurrentUser } from "../store/features/userSlice";
 import type { RootState } from "../store/store";

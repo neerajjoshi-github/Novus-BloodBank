@@ -38,6 +38,7 @@ const InventoryTable = ({ data }: any) => {
         currentUser?.userType === "organization"
           ? "Reference"
           : "organizationName",
+      // @ts-ignore
       render: (text, record) =>
         currentUser?.userType === "organization"
           ? record.inventoryType === "in"
@@ -49,6 +50,7 @@ const InventoryTable = ({ data }: any) => {
       key: 5,
       title: "Date",
       dataIndex: "date",
+      // @ts-ignore
       render: (text, record) => formatDate(record.createdAt),
     },
   ];

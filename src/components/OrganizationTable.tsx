@@ -47,6 +47,7 @@ const OrganizationTable = ({ data }: any) => {
       key: 5,
       title: "Created At",
       dataIndex: "createdAt",
+      // @ts-ignore
       render: (text, record) => formatDate(record.createdAt),
     },
     {
@@ -54,6 +55,7 @@ const OrganizationTable = ({ data }: any) => {
       title: "Action",
       dataIndex: "action",
       fixed: "right",
+      // @ts-ignore
       render: (text, record) => (
         <span
           onClick={() => {
