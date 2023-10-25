@@ -1,5 +1,8 @@
 import axios, { Method } from "axios";
 
+axios.defaults.baseURL =
+  import.meta.env.VITE_SERVER_BASE_URL || "http://localhost:8008";
+
 export const axiosHandler = async (
   method: Method,
   endpoint: string,

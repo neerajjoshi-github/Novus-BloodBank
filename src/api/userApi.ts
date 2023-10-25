@@ -21,31 +21,23 @@ type LoginData = {
 };
 
 export const registerUser = async (data: User) => {
-  const response = await axiosHandler(
-    "POST",
-    "http://localhost:8008/api/user/register",
-    data
-  );
+  const response = await axiosHandler("POST", "/api/user/register", data);
   return response;
 };
 export const loginUser = async (data: LoginData) => {
-  const response = await axiosHandler(
-    "POST",
-    "http://localhost:8008/api/user/login",
-    data
-  );
+  const response = await axiosHandler("POST", "/api/user/login", data);
   return response;
 };
 
 export const getUser = async () => {
-  const response = await axiosHandler("GET", "http://localhost:8008/api/user");
+  const response = await axiosHandler("GET", "/api/user");
   return response;
 };
 
 export const getOrganizationTableData = async () => {
   const response = await axiosHandler(
     "GET",
-    "http://localhost:8008/api/user/organization-table-data"
+    "/api/user/organization-table-data"
   );
   return response;
 };
