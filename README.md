@@ -4,6 +4,10 @@
 
 This is a client-side web application designed to help organizations efficiently manage blood donation data. This app allows organizations to keep track of their blood inventory, record donations from donors, and facilitate the distribution of blood to hospitals.
 
+## Demo
+
+Check out the live demo deployed on Vercel: [NOVUS-BLOODBANK](https://novus-blood-bank-client.vercel.app/)
+
 ## Table of Contents
 
 - [Features](#features)
